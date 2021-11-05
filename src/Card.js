@@ -55,7 +55,12 @@ const Card = () => {
   const handleRequest = (e) => {
     e.preventDefault();
 
-    if (newData.name === "" || newData.image === "" || newData.date === "") {
+    if (
+      newData.name === "" ||
+      newData.age === "" ||
+      newData.image === "" ||
+      newData.date === ""
+    ) {
       return alert("Please complete the form");
     }
 
@@ -92,7 +97,7 @@ const Card = () => {
                     color="text.primary"
                     fontSize={13}
                   >
-                    {`${age} years old`}
+                    {`${age} years`}
                   </Typography>
                   <Typography
                     paddingLeft="5px"
